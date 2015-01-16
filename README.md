@@ -3,7 +3,12 @@
 ###Integration
 TwitchKit enables you to embed a list of live channels, play live broadcasts and authenticate Twitch users in your iOS app with minimal effort.
 
-To add TwitchKit to your project, simply drop TwitchKit.framework and TwitchKit.bundle into the Frameworks section of your project in Xcode. Then, include the TwitchKit header file and invoke the presentStreamListForGameTitle:mode: with the name of your game:
+To add TwitchKit to your project, simply drop TwitchKit.framework and TwitchKit.bundle into the Frameworks section of your project in Xcode. 
+
+If you are using Cocoapods, simply add `pod 'TwitchKit'` to your Podfile.
+
+Then, include the TwitchKit header file and invoke the presentStreamListForGameTitle:mode: with the name of your game:
+
 
 `#import <TwitchKit/TwitchKit.h>`   
   
@@ -39,7 +44,7 @@ TwitchKit posts the following notifications to the default NSNotificationCenter:
 
 ###Requirements
 
-TwitchKit v2.0.1 should be deployed in applications that link against 7.0 and later versions of the iOS SDK. The Release and Debug binaries are compiled for armv7, armv7s and i386 architectures.
+TwitchKit v2.0.1 should be deployed in applications that link against 7.0 and later versions of the iOS SDK. The Release and Debug binaries are compiled for armv7, armv7s and i386 architectures. 
 
 You project should also link against the following standard libraries:
 * ImageIO.framework
@@ -48,6 +53,8 @@ You project should also link against the following standard libraries:
 * UIKit.framework
 * Foundation.framework
 * CoreGraphics.framework
+
+Note: If you are using Cocoapods to install TwitchKit, these requirements are added automatically.
 
 ###Changelog
 
